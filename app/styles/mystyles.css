@@ -1,0 +1,226 @@
+#jumbotronBackground {
+  background-image: url(../images/mainSpace.jpg);
+  background-attachment: local;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  height: 400px;
+}
+
+#jumbotronAboutus {
+  background-image: url(../images/aboutBackground.jpg);
+  background-attachment: local;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: left;
+  height: 400px;
+}
+
+.centerText {
+  text-align: center;
+}
+.leftText {
+  text-align: left;
+}
+.rightText {
+  text-align: right;
+}
+
+.panel1 {
+  background-color: #ECECEC;
+}
+.panel2 {
+  background: #74ebd5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.media-object {
+  width: 100%;
+  height: auto;
+}
+
+.img-team {
+  border-radius: 50%;
+  border:solid 2px;
+  border-color: white;
+}
+
+.row-header {
+  margin: 0px auto;
+  padding: 0px 0px;
+}
+.row-content {
+  margin: 0px auto;
+  padding: 45px 0px;
+  border-bottom: 0px ridge;
+  min-height: 200px;
+}
+.row-footer {
+  color: white;
+  margin: 0px auto;
+  padding: 0px 0px;
+  background-color: #1F1F1F;
+}
+/*
+.carousel .item {
+  height: 600px;
+}*/
+.carousel .item img {
+  left: 0;
+  top: 0;
+  min-height: 100px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.navbar-inverse {
+  color: #ffffff;
+}
+.navbar-inverse .navbar-nav > .active > a {
+  background: #778899;
+  color: #ffffff;
+}
+.navbar-inverse .navbar-nav > .active > a:hover {
+  background: #778899;
+  color: #ffffff;
+}
+.navbar-inverse .navbar-nav > .active > a:focus {
+  background: #778899;
+  color: #ffffff;
+}
+.navbar-inverse .navbar-nav > .open > a {
+  background: #778899;
+  color: #ffffff;
+}
+.navbar-inverse .navbar-nav > .open > a:hover {
+  background: #778899;
+  color: #ffffff;
+}
+.navbar-inverse .navbar-nav > .open > a:focus {
+  background: #778899;
+  color: #ffffff;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+  background-color: #778899;
+  color: #778899;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover {
+  color: #000000;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu {
+  background-color: #778899;
+  color: #778899;
+}
+address {
+  color: black;
+  font-size: 80%;
+  margin: 0px;
+}
+body {
+  align: center;
+  padding: 50px 0px 0px 0px;
+  z-index: 0;
+}
+.tab-content {
+  border-bottom: 1px solid #dddddd;
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  padding: 10px;
+}
+.affix {
+  top: 100px;
+}
+
+div.rating {
+  width: 300px;
+  display: inline-block;
+}
+input.ratingClass { display: none; }
+label.ratingClass {
+  float: right;
+  padding: 10px;
+  font-size: 36px;
+  color: #444;
+  transition: all .2s;
+}
+input.ratingClass:checked ~ label.ratingClass:before {
+  content: '\f005';
+  color: #FD4;
+  transition: all .25s;
+}
+input.rating-5:checked ~ label.ratingClass:before {
+  color: #FE7;
+  text-shadow: 0 0 20px #952;
+}
+input.rating-2:checked ~ label.ratingClass:before { color: #FF9900; }
+input.rating-1:checked ~ label.ratingClass:before { color: #FF0000; }
+label.ratingClass:hover { transform: rotate(-15deg) scale(1.3); }
+label.ratingClass:before {
+  content: '\f006';
+  font-family: FontAwesome;
+}
+
+/* Price tables */
+* {
+    box-sizing: border-box;
+}
+.columns {
+    float: left;
+    width: 100%;
+    padding: 8px;
+}
+.price { /* Style the list */
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.price:hover { /* Add shadows on hover */
+    box-shadow: 10px 10px 12px 0 rgba(0,0,0,0.2)
+}
+.price .header { /* Pricing header */
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+}
+.price li { /* List items */
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+.price .grey { /* Grey list item */
+    background-color: #eee;
+    font-size: 20px;
+}
+.priceButton { /* The "Reserve Now" button */
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.box {
+    width: 80%;
+    padding: 45px 0px;
+    filter: alpha(opacity=0);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imgDetail {
+    width: 100%;
+    height: auto;
+    border-bottom: 25px;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+}

@@ -1,0 +1,41 @@
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><span>NomadOffice</span></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li ng-class="{active: stateis('app')}"><a ui-sref="app">
+                        <span aria-hidden="true" class="glyphicon glyphicon-home"></span></a></li>
+                    <li ng-class="{active: stateis('app.menu') || stateis('app.placedetails')}"><a ui-sref="app.menu">
+                         <span aria-hidden="true"></span>
+                         Spaces</a></li>
+                     <li ng-class="{active: stateis('app.favorites')}"><a ui-sref="app.favorites">
+                         Favorites</a></li>
+                     <li ng-class="{active: stateis('app.aboutus')}"><a ui-sref="app.aboutus">
+                         <span aria-hidden="true"></span>
+                         About</a></li>
+                     <li ng-class="{active: stateis('app.contactus')}"><a ui-sref="app.contactus">
+                         Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li ng-if="!loggedIn"><a ng-click="openLogin()">
+                    <span class="glyphicon glyphicon-log-in"></span> Login</a>
+                    </li>
+                    <li ng-if="loggedIn">
+                    <a>{{username}}</a>
+                    </li>
+                    <li ng-if="loggedIn">
+                    <a ng-click="logOut()">
+                    <span class="glyphicon glyphicon-log-in"></span> Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>

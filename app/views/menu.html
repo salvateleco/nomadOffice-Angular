@@ -1,0 +1,53 @@
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+               <ul class="breadcrumb">
+                   <li><a href="index.html">Home</a></li>
+                   <li class="active">Spaces</li>
+               </ul>
+            </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-xs-12" ng-if="!showMenu">
+                <h3>{{message}}</h3>
+            </div>
+            <div class="col-xs-12" ng-if="showMenu">
+                <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation" ng-class="{active:isSelected(1)}">
+                  <a ng-click="select(1)" aria-controls="all menu" role="tab">All</a></li>
+                  <li role="presentation" ng-class="{active:isSelected(2)}">
+                  <a ng-click="select(2)" aria-controls="barcelona" role="tab">Barcelona</a></li>
+                  <li role="presentation" ng-class="{active:isSelected(3)}">
+                  <a ng-click="select(3)" aria-controls="madrid" role="tab">Madrid</a></li>
+                  <li role="presentation" ng-class="{active:isSelected(4)}">
+                  <a ng-click="select(4)" aria-controls="newyork" role="tab">New York</a></li>
+                  <li role="presentation" ng-class="{active:isSelected(5)}">
+                  <a ng-click="select(5)" aria-controls="paris" role="tab">Paris</a></li>
+                </ul>
+
+                <div class="tab-content">
+                <ul class="media-list tab-pane fade in active">
+                  <li class="media" ng-repeat="place in places | filter:filtText">
+                    <div class="media-left media-middle">
+                        <a ui-sref="app.placedetails({id: place._id})">
+                          <img ng-src={{place.image}} class="media-object" style="width:300px">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h2 class="media-heading">{{place.name}}
+                          <span class="label label-success label-xs">{{place.label}}</span>
+                           <button ng-click="addToFavorites(place._id)"
+                                 class="btn btn-xs btn-default pull-right" type="button">
+                                 <i class="fa fa-heart"></i>
+                          </button>
+                        </h2>
+                        <p>{{place.description}}</p>
+                    </div>
+                 </li>
+               </ul>
+               </div>
+            </div>
+        </div>
+
+    </div>
