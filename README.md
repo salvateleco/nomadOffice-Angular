@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Nomad Office - Angular is an Angular based web client developed as part of the Capstone Project in the Full Stack Development specialization in Coursera.
+"Nomad Office - Angular" is an Angular based web client developed as part of the Capstone Project in the Full Stack Development specialization in Coursera.
 
 ## Take a look
 
