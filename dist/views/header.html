@@ -7,22 +7,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><span>NomadOffice</span></a>
+                <a class="navbar-brand" ui-sref="app"><span>NomadOffice</span></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li ng-class="{active: stateis('app')}"><a ui-sref="app">
-                        <span aria-hidden="true" class="glyphicon glyphicon-home"></span></a></li>
-                    <li ng-class="{active: stateis('app.menu') || stateis('app.placedetails')}"><a ui-sref="app.menu">
-                         <span aria-hidden="true"></span>
-                         Spaces</a></li>
-                     <li ng-class="{active: stateis('app.favorites')}"><a ui-sref="app.favorites">
-                         Favorites</a></li>
-                     <li ng-class="{active: stateis('app.aboutus')}"><a ui-sref="app.aboutus">
-                         <span aria-hidden="true"></span>
-                         About</a></li>
-                     <li ng-class="{active: stateis('app.contactus')}"><a ui-sref="app.contactus">
-                         Contact</a></li>
+                    <li ng-class="{active: stateis('app')}"><a ui-sref="app">Home</a></li>
+                    <li ng-class="{active: stateis('app.menu')}"><a ui-sref="app.menu">Spaces</a></li>
+                    <li ng-class="{active: stateis('app.favorites')}"><a ui-sref="app.favorites">Favorites</a></li>
+                    <li ng-class="{active: stateis('app.aboutus')}"><a ui-sref="app.aboutus">About</a></li>
+                    <li ng-class="{active: stateis('app.contactus')}"><a ui-sref="app.contactus">Contact</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li ng-if="!loggedIn"><a ng-click="openLogin()">
